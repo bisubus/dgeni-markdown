@@ -5,7 +5,7 @@
 ## Directive Info
 
 {% if doc.scope %}* This directive creates new scope.{% endif %}
-* This directive executes at priority level {$ doc.priority $}.
+{% if doc.priority %}* This directive executes at priority level {$ doc.priority $}.{% endif %}
 
 {% block usage %}
 ## Usage
